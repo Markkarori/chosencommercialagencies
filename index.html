@@ -1,45 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Right Aligned Navbar</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chosen Commercial Agencies</title>
     <meta name="Mark" description="" />
-    <link rel="stylesheet" href="style.css">
-     <link rel="icon" href="images/chosencompanylogo.png.jpg" type="x/image-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="images/chosencompanylogo.png.jpg"
+      type="x/image-icon"
+    />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
     <header class="navbar">
-        <div class="logo">
-            <img src="images/chosencompanylogo.png.jpg" alt="Logo" />
+      <div class="logo">
+        <img src="images/chosencompanylogo.png.jpg" alt="Logo" />
+      </div>
+      <!-- For Web Devices -->
+      <nav class="nav-links">
+        <a onclick="scrollToSection('home')"data-id="home">Home</a>
+        <a onclick="scrollToSection('about')" data-id="about">About</a>
+        <a onclick="scrollToSection('whyus')" data-id="whyus">Why Us</a>
+        <a onclick="scrollToSection('services')" data-id="services">Services</a>
+        <a onclick="scrollToSection('contact')" data-id="contact">Contact</a>
+      </nav>
+      <!--  -->
+      <!-- Mobile View -->
+      <div class="hambuger" onclick="openMobileNav()">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect y="4" width="24" height="2" rx="1" fill="currentColor" />
+          <rect y="11" width="24" height="2" rx="1" fill="currentColor" />
+          <rect y="18" width="24" height="2" rx="1" fill="currentColor" />
+        </svg>
+      </div>
+      <nav class="mobile-nav-links-container" id="links-container">
+        <div class="mobile-links">
+         <a onclick="scrollToSection('home')"data-id="home">Home</a>
+        <a onclick="scrollToSection('about')" data-id="about">About</a>
+        <a onclick="scrollToSection('whyus')" data-id="whyus">Why Us</a>
+        <a onclick="scrollToSection('services')" data-id="services">Services</a>
+        <a onclick="scrollToSection('contact')" data-id="contact">Contact</a>
         </div>
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Why Us</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="hambuger">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect y="4" width="24" height="2" rx="1" fill="currentColor" />
-            <rect y="11" width="24" height="2" rx="1" fill="currentColor" />
-            <rect y="18" width="24" height="2" rx="1" fill="currentColor" />
-          </svg>
-        </div>
+      </nav>
     </header>
-   
 
-</body>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+      </section>
+      <section id="services">
+      
+        <h2>Services</h2></section>
+        
+      <section id="whyus">
+        <h2> Why Us</h2>
+      </section>
+        
+    <section id="contact">
+        <section><h2>Contact</h2>
+        </section>
+    </main>
+  </body>
 </html>
-
-
 
 
 
